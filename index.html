@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Judoka</title>
+  <!-- Required meta tags -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header  class="m-100 p-3" style="height: 25%; background-color: #5E503C;">
+    <h1 class="display-6 text-center text-light">Catégories Judo</h1>
+    <p class="lead text-center text-light">Trouvez la catégorie de combat à laquelle vous appartenez</p>
+  </header>
+  <img src="img/judo.jpg" width="100%" height="100%" style="position:absolute;">
+  <!-- Form to get User datas -->
+  <form class="container my-4 card col-12 col-md-9 col-lg-4" style="background-color: rgba(250,250,250,0.9)" action="index.html" method="post" onsubmit="getUserData(); return false">
+      <!-- For user name -->
+      <div class="form-group row">
+        <label class="col-sm-12 col-form-label" for="text_name">Quel est votre nom ?</label>
+        <div class="col-sm-12">
+          <input id="text_name" class="form-control" type="text" placeholder="Votre nom">
+        </div>
+      </div>
+      <!-- For user gender -->
+      <fieldset class="form-group">
+        <div class="row">
+          <legend class="col-sm-12 col-form-legend" for="genre">Genre</legende>
+            <div class="col-sm-12">
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" id="genderFemale" name="genre" value="femme">
+                  Femme
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" id="genderMale" name="genre" value="homme">
+                  Homme
+                </label>
+              </div>
+            </div>
+        </div>
+      </fieldset>
+      <!-- For user age -->
+      <div class="form-group row">
+        <label class="col-sm-12 col-form-label" for="userAge">Sélectionner votre tranche d'age</label>
+          <div class="col-sm-12">
+              <select class="form-control" id="userAge">
+              <option value="9_10">de 9 à 10 ans inclus</option>
+              <option value="11_12">de 11 à 12 ans inclus</option>
+              <option value="13_14">de 13 à 14 ans inclus</option>
+              <option value="15_16">de 15 à 16 ans inclus</option>
+              <option value="17_19">de 17 à 19 ans inclus</option>
+              <option value="20">20 ans et plus</option>
+            </select>
+        </div>
+      </div>
+      <!-- For user weight -->
+      <div class="form-group row">
+        <label class="col-sm-12 col-form-label" for="userWeight">Quel est votre poids ?</label>
+        <div class="col-sm-12">
+          <input id="userWeight" class="form-control" type="float" min="0" placeholder="Votre poids (en kg)">
+        </div>
+      </div>
+        <div class="form-group row">
+          <div class="col-sm-2">
+            <input style="background-color:#ffd700;" class="btn btn-block" type="submit" name="" value="Ok">
+          </div>
+        </div>
+    </form>
+  </div>
+  <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>
